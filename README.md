@@ -32,23 +32,22 @@ rows only — validation rows stay identical to v13.2.
 ```
 .
 ├── README.md                                    # This file
-├── train-2026-v13-2.ipynb                       # Main calibrated model
-├── train-2026-v13-trendaware.ipynb              # Conservative variant (for blend input)
+├── submit_version_13_2.ipynb                       # Main calibrated model
+├── submit_version_13.ipynb              # Conservative variant (for blend input)
 ├── make_blend.py                                # Post-processing blend script
-└── submission_final.csv                         # Final submission
 ```
 
 ## How to Reproduce
 
 ### Step 1 — Train main model (v13.2)
-Open `train-2026-v13-2.ipynb` on Kaggle with competition dataset
+Open `submit_version_13_2.ipynb` on Kaggle with competition dataset
 `hbaac-round2` attached. Run all cells. This produces:
 - `submission_v13_2_level_calibration.csv`
 
 Runtime: ~45 minutes on Kaggle CPU.
 
 ### Step 2 — Train conservative variant (v13)
-Open `train-2026-v13-trendaware.ipynb`. Run all cells. This produces:
+Open `submit_version_13.ipynb`. Run all cells. This produces:
 - `submission_v13_trendaware.csv`
 
 Runtime: ~40 minutes on Kaggle CPU.
